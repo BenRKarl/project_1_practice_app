@@ -1,17 +1,25 @@
 <div class="row"></div>
-
-<% @songs.each do |song| %>
-
 <div class="container">
-  <div class="ten columns offset-by-five">
-      <%= song[:title] %></br>
+  <h1>Search Results for that Song</h1>
+
+  <% @songs.each do |song| %>
+
+  <div class="four columns alpha song_search_box">
+
+    <div class="three columns offset-by-one alpha omega">
+
+      <%= song[:title] %>
       <div class="row"></div>
       <img src="<%= song[:artwork_url] %>">
+
       <form action="/songs/save" method="post">
         <%= token_tag %>
         <input type="hidden" name="track_id" value="<%= song[:itunes_song_id] %>">
-        <input type="submit" value="Save">
+        <input type="submit" value="Save to my list">
       </form>
+    </div>
   </div>
+  <div class="row"></div>
+  <% end %>
 </div>
-<% end %>
+

@@ -1,0 +1,25 @@
+.song_box {
+  border: 1px solid black;
+  background-color: lightgrey;
+  padding: 1em;
+  text-align: center;
+}
+
+.song_box form {
+  margin-bottom: -10px
+}
+
+.song_search_box {
+  border: 1px solid black;
+  padding: 1em;
+  background-color: lightgrey;
+
+}
+
+.song_search_box form {
+  margin-bottom: -10px;
+}
+
+
+
+
