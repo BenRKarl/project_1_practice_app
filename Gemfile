@@ -47,3 +47,4 @@ end
 gem 'rails_12factor'
 gem 'httparty'
 gem 'skeleton-rails'
+gem 'font-awesome-rails'
